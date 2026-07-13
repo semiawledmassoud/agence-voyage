@@ -76,7 +76,7 @@
 <div class="auth-form-wrap">
     <a href="/" class="auth-logo">✈ Travel<span>Dream</span></a>
 
-    <h1 class="auth-title">Créer un compte 🚀</h1>
+    <h1 class="auth-title">Créer un compte </h1>
     <p class="auth-sub">Rejoignez plus de 1200 voyageurs satisfaits</p>
 
     @if($errors->any())
@@ -128,12 +128,7 @@
             </div>
         </div>
 
-        <div class="role-box">
-            <p class="mb-0" style="color:#6EE7B7;font-size:13px">
-                <i class="bi bi-shield-check me-2"></i>
-                Compte créé automatiquement avec le rôle <strong>Client</strong>
-            </p>
-        </div>
+       
 
         <button type="submit" class="btn-submit">
             <i class="bi bi-person-plus me-2"></i>Créer mon compte gratuitement

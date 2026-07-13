@@ -12,68 +12,79 @@
         * { font-family: var(--font); }
         body { margin:0; padding:0; min-height:100vh; display:flex; overflow:hidden; }
 
-        /* Image gauche */
-        .auth-image {
-            flex: 1; position: relative; display: none;
-        }
-        @media(min-width:900px) { .auth-image { display: block; } }
+        .auth-image { flex:1; position:relative; display:none; }
+        @media(min-width:900px) { .auth-image { display:block; } }
         .auth-image img { width:100%; height:100%; object-fit:cover; }
         .auth-image-overlay {
-            position: absolute; inset: 0;
-            background: linear-gradient(135deg, rgba(14,165,233,0.6) 0%, rgba(139,92,246,0.5) 100%);
+            position:absolute; inset:0;
+            background:linear-gradient(135deg,rgba(14,165,233,0.6) 0%,rgba(139,92,246,0.5) 100%);
         }
         .auth-image-content {
-            position: absolute; bottom: 50px; left: 40px; right: 40px;
-            color: white;
+            position:absolute; bottom:50px; left:40px; right:40px; color:white;
         }
-        .auth-image-title { font-family:'Playfair Display',serif; font-size: 2.2rem; font-weight: 800; margin-bottom: 10px; }
-        .auth-image-sub { font-size: 15px; opacity: 0.85; }
-        .auth-image-stats { display: flex; gap: 24px; margin-top: 24px; }
-        .auth-stat-num { font-family:'Playfair Display',serif; font-size: 22px; font-weight: 800; }
-        .auth-stat-lbl { font-size: 11px; opacity: 0.7; }
+        .auth-image-title { font-family:'Playfair Display',serif; font-size:2.2rem; font-weight:800; margin-bottom:10px; }
+        .auth-image-sub { font-size:15px; opacity:0.85; }
+        .auth-image-stats { display:flex; gap:24px; margin-top:24px; }
+        .auth-stat-num { font-family:'Playfair Display',serif; font-size:22px; font-weight:800; }
+        .auth-stat-lbl { font-size:11px; opacity:0.7; }
 
-        /* Formulaire droite */
         .auth-form-wrap {
-            width: 100%; max-width: 480px;
-            background: #0F172A;
-            display: flex; flex-direction: column;
-            justify-content: center;
-            padding: 48px 44px;
-            overflow-y: auto;
+            width:100%; max-width:480px;
+            background:#0F172A;
+            display:flex; flex-direction:column;
+            justify-content:center;
+            padding:48px 44px;
+            overflow-y:auto;
         }
-        @media(max-width:899px) { .auth-form-wrap { max-width: 100%; } }
+        @media(max-width:899px) { .auth-form-wrap { max-width:100%; } }
 
-        .auth-logo { font-family:'Playfair Display',serif; font-size: 22px; font-weight: 800; color: white; margin-bottom: 40px; display: block; text-decoration: none; }
-        .auth-logo span { color: var(--primary); }
-        .auth-title { font-family:'Playfair Display',serif; font-size: 1.9rem; font-weight: 800; color: white; margin-bottom: 6px; }
-        .auth-sub { color: #64748B; font-size: 14px; margin-bottom: 32px; }
+        .auth-logo {
+            font-family:'Playfair Display',serif;
+            font-size:22px; font-weight:800; color:white;
+            margin-bottom:40px; display:block; text-decoration:none;
+        }
+        .auth-logo span { color:var(--primary); }
+        .auth-title { font-family:'Playfair Display',serif; font-size:1.9rem; font-weight:800; color:white; margin-bottom:6px; }
+        .auth-sub { color:#64748B; font-size:14px; margin-bottom:32px; }
 
-        .form-label { color: #94A3B8; font-size: 12.5px; font-weight: 600; letter-spacing: 0.5px; margin-bottom: 7px; text-transform: uppercase; }
-        .input-wrap { position: relative; }
-        .input-icon { position: absolute; left: 14px; top: 50%; transform: translateY(-50%); color: #475569; font-size: 15px; z-index: 1; }
+        .form-label { color:#94A3B8; font-size:12.5px; font-weight:600; letter-spacing:0.5px; margin-bottom:7px; text-transform:uppercase; }
+        .input-wrap { position:relative; }
+        .input-icon { position:absolute; left:14px; top:50%; transform:translateY(-50%); color:#475569; font-size:15px; z-index:1; }
         .form-control {
-            background: rgba(255,255,255,0.05);
-            border: 1.5px solid rgba(255,255,255,0.08);
-            border-radius: 11px; padding: 12px 16px 12px 42px;
-            color: white; font-size: 14.5px; transition: all 0.2s; width: 100%;
+            background:rgba(255,255,255,0.05);
+            border:1.5px solid rgba(255,255,255,0.08);
+            border-radius:11px; padding:12px 16px 12px 42px;
+            color:white; font-size:14.5px; transition:all 0.2s; width:100%;
         }
-        .form-control::placeholder { color: #334155; }
-        .form-control:focus { background: rgba(255,255,255,0.08); border-color: var(--primary); box-shadow: 0 0 0 3px rgba(14,165,233,0.12); color: white; outline: none; }
+        .form-control::placeholder { color:#334155; }
+        .form-control:focus {
+            background:rgba(255,255,255,0.08);
+            border-color:var(--primary);
+            box-shadow:0 0 0 3px rgba(14,165,233,0.12);
+            color:white; outline:none;
+        }
 
-        .btn-submit { background: linear-gradient(135deg, var(--primary), var(--secondary)); border: none; color: white; width: 100%; padding: 14px; border-radius: 11px; font-weight: 700; font-size: 15px; transition: all 0.3s; cursor: pointer; margin-top: 8px; }
-        .btn-submit:hover { transform: translateY(-2px); box-shadow: 0 8px 25px rgba(14,165,233,0.4); }
+        .btn-submit {
+            background:linear-gradient(135deg,var(--primary),var(--secondary));
+            border:none; color:white; width:100%;
+            padding:14px; border-radius:11px;
+            font-weight:700; font-size:15px;
+            transition:all 0.3s; cursor:pointer; margin-top:8px;
+        }
+        .btn-submit:hover { transform:translateY(-2px); box-shadow:0 8px 25px rgba(14,165,233,0.4); }
 
-        .form-check-input { background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.15); }
-        .form-check-label { color: #64748B; font-size: 13.5px; }
+        .form-check-input { background:rgba(255,255,255,0.08); border-color:rgba(255,255,255,0.15); }
+        .form-check-label { color:#64748B; font-size:13.5px; }
+        .auth-link { color:var(--primary); text-decoration:none; font-weight:600; }
+        .auth-link:hover { color:#38BDF8; }
+        .divider { border-color:rgba(255,255,255,0.07); margin:26px 0; }
 
-        .auth-link { color: var(--primary); text-decoration: none; font-weight: 600; }
-        .auth-link:hover { color: #38BDF8; }
-        .divider { border-color: rgba(255,255,255,0.07); margin: 26px 0; }
-
-        .error-box { background: rgba(239,68,68,0.1); border: 1px solid rgba(239,68,68,0.2); border-radius: 10px; padding: 12px 16px; color: #FCA5A5; font-size: 13.5px; margin-bottom: 22px; }
-        .demo-box { background: rgba(14,165,233,0.07); border: 1px solid rgba(14,165,233,0.15); border-radius: 10px; padding: 14px; margin-top: 20px; }
-        .demo-box p { color: #64748B; font-size: 12.5px; margin: 0; }
-        .demo-box .code { font-family: monospace; color: #38BDF8; font-size: 13px; }
+        .error-box {
+            background:rgba(239,68,68,0.1);
+            border:1px solid rgba(239,68,68,0.2);
+            border-radius:10px; padding:12px 16px;
+            color:#FCA5A5; font-size:13.5px; margin-bottom:22px;
+        }
     </style>
 </head>
 <body>
@@ -139,7 +150,7 @@
             <div class="input-wrap">
                 <i class="bi bi-lock input-icon"></i>
                 <input type="password" name="password" class="form-control"
-                       placeholder="••••••••" required id="pwdInput">
+                       placeholder="••••••••" required>
             </div>
         </div>
 
@@ -159,15 +170,6 @@
         Pas encore de compte ?
         <a href="{{ route('register') }}" class="auth-link ms-1">S'inscrire gratuitement</a>
     </p>
-
-    <div class="demo-box">
-        <p class="mb-2 fw-semibold" style="color:#94A3B8;font-size:12px">
-            <i class="bi bi-shield-lock me-1" style="color:var(--primary)"></i>
-            COMPTE ADMIN DÉMO
-        </p>
-        <p class="code mb-1">📧 admin@gmail.com</p>
-        <p class="code mb-0">🔑 admin123</p>
-    </div>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
