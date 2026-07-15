@@ -1,4 +1,4 @@
-# ✈️ TravelDream — Plateforme Agence de Voyage
+# ✈️ TravelDream — Plateforme de Gestion d'Agence de Voyage
 
 ![Laravel](https://img.shields.io/badge/Laravel-12.x-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)
 ![PHP](https://img.shields.io/badge/PHP-8.2-777BB4?style=for-the-badge&logo=php&logoColor=white)
@@ -6,117 +6,139 @@
 ![MySQL](https://img.shields.io/badge/MySQL-8.0-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)
 
-> Application web complète pour une agence de voyage avec système de
-> réservation en ligne, paiement sécurisé et chatbot IA Python intégré.
+> Application web full-stack développée pour digitaliser la gestion d'une agence de voyage. Elle permet aux clients de consulter les offres, réserver et payer leurs voyages en ligne, tandis que les administrateurs disposent d'un tableau de bord complet pour gérer les offres, les réservations, les paiements et les clients.
 
 ---
 
-## 📸 Aperçu
+# 📸 Aperçu
 
-### Page d'accueil
-- Hero slider avec photos de destinations
-- Recherche rapide par destination, type, date, budget
-- Offres à la une
-- Vidéos publicitaires
-- Statistiques et témoignages
+## 🌍 Espace Client
 
-### Espace Client
-- Interface moderne avec chatbot IA
-- Réservation et paiement en ligne
-- Suivi des réservations en temps réel
+- Consultation des offres de voyage
+- Recherche et filtrage
+- Réservation en ligne
+- Paiement sécurisé
+- Historique des réservations
+- Gestion du profil
+- Chatbot IA
 
-### Espace Admin
-- Dashboard avec statistiques en temps réel
-- Gestion complète des offres, réservations, clients
+## 🛠️ Espace Administration
+
+- Dashboard avec statistiques
+- Gestion des offres
+- Gestion des réservations
+- Gestion des clients
+- Gestion des paiements
+- Gestion des médias
+- Gestion des FAQ du chatbot
 
 ---
 
-## ✨ Fonctionnalités complètes
+# ✨ Fonctionnalités
 
-### 👤 Espace Client
+## 👤 Espace Client
+
 | Fonctionnalité | Description |
 |---|---|
-| Inscription / Connexion | Authentification sécurisée avec rôle automatique |
-| Offres de voyage | Filtrage par destination, type, prix, date |
-| Réservation | Formulaire avec calcul de prix en temps réel |
-| Paiement | Paiement simulé Stripe sécurisé |
-| Suivi réservations | Statut en attente / confirmée / annulée |
-| Profil | Modification + upload photo de profil |
-| Chatbot IA | Assistant Python disponible 24h/24 |
-| Notifications | Système de notifications intégré |
+| Authentification | Inscription et connexion sécurisées |
+| Offres | Consultation et filtrage des voyages |
+| Réservation | Réservation avec calcul automatique du prix |
+| Paiement | Paiement sécurisé |
+| Historique | Suivi des réservations |
+| Profil | Modification des informations personnelles |
+| Chatbot IA | Assistance disponible 24h/24 |
 
-### 🛠️ Espace Admin
+---
+
+## 👨‍💼 Espace Administration
+
 | Fonctionnalité | Description |
 |---|---|
-| Dashboard | Stats en temps réel + graphiques |
-| Gestion offres | CRUD + upload images + activation |
-| Slides & Vidéos | Gestion médias publicitaires |
-| Réservations | Confirmer / Annuler + menu 3 points |
-| Clients | Bloquer / Supprimer + voir profils |
-| Paiements | Historique des transactions |
-| FAQ Chatbot | Gérer la base de connaissances IA |
-| Notifications | Envoyer à tous les clients |
+| Dashboard | Statistiques en temps réel |
+| Offres | Ajouter, modifier et supprimer des offres |
+| Réservations | Confirmer ou annuler les réservations |
+| Clients | Gérer les comptes clients |
+| Paiements | Suivi des paiements |
+| Médias | Gestion des slides et vidéos |
+| FAQ | Gestion de la base de connaissances du chatbot |
 
 ---
 
-## 🛠️ Stack Technique
+# 🛠️ Stack Technique
 
-### Backend
-- **Laravel 12** — Framework PHP MVC
-- **PHP 8.2** — Langage serveur
-- **MySQL 8.0** — Base de données relationnelle
-- **Laravel Breeze** — Authentification
+## Backend
 
-### Frontend
-- **Bootstrap 5.3** — Framework CSS responsive
-- **Bootstrap Icons 1.11** — Bibliothèque d'icônes
-- **Google Fonts** — Typographie (Inter, DM Sans, Playfair Display)
-- **Blade Templates** — Moteur de templates Laravel
+- Laravel 12
+- PHP 8.2
+- MySQL
+- Laravel Breeze
 
-### Chatbot IA
-- **Python 3.x** — Langage du chatbot
-- **Flask** — API REST Python
-- **Flask-CORS** — Gestion des origines croisées
-- **TF-IDF + Cosine Similarity** — Algorithme NLP maison
+## Frontend
 
-### Outils
-- **XAMPP** — Environnement local (Apache + MySQL)
-- **Composer** — Gestionnaire de dépendances PHP
-- **Git** — Contrôle de version
+- Blade
+- Bootstrap 5
+- HTML5
+- CSS3
+- JavaScript
+
+## Chatbot IA
+
+- Python 3
+- Flask
+- Flask-CORS
+- TF-IDF
+- Cosine Similarity
+
+## Outils
+
+- XAMPP
+- Composer
+- Git
+- GitHub
+- Visual Studio Code
 
 ---
 
-## 📦 Installation complète
+# 📦 Installation
 
-### Prérequis obligatoires
-- ✅ XAMPP installé (PHP 8.2 + MySQL)
-- ✅ Composer installé
-- ✅ Python 3.x installé
-- ✅ Git installé
+## Prérequis
 
-### Étape 1 — Cloner le projet
+- PHP 8.2
+- Composer
+- Python 3
+- MySQL
+- Git
+- XAMPP
+
+---
+
+## 1. Cloner le projet
 
 ```bash
-git clone https://github.com/TON_USERNAME/agence-voyage.git
+git clone https://github.com/semiawledmassoud/agence-voyage.git
+
 cd agence-voyage
 ```
 
-### Étape 2 — Installer les dépendances PHP
+---
+
+## 2. Installer les dépendances Laravel
 
 ```bash
 composer install
 ```
 
-### Étape 3 — Configurer l'environnement
+---
+
+## 3. Configurer l'environnement
 
 ```bash
 cp .env.example .env
+
 php artisan key:generate
 ```
 
-### Étape 4 — Configurer la base de données
-
-Ouvre `.env` et modifie :
+Configurer ensuite la base de données dans le fichier `.env`.
 
 ```env
 DB_CONNECTION=mysql
@@ -127,299 +149,174 @@ DB_USERNAME=root
 DB_PASSWORD=
 ```
 
-### Étape 5 — Créer la base de données
+---
 
-Ouvre phpMyAdmin (`http://localhost/phpmyadmin`) et crée une base :
+## 4. Créer la base de données
+
+Créer une base de données nommée :
+
 ```
-Nom : agence_voyage
-Interclassement : utf8mb4_unicode_ci
+agence_voyage
 ```
 
-### Étape 6 — Lancer les migrations
+---
+
+## 5. Lancer les migrations
 
 ```bash
 php artisan migrate:fresh --seed
 ```
 
-Cela crée toutes les tables et insère :
-- ✅ Compte admin (admin@gmail.com / admin123)
-- ✅ 5 offres de démonstration
-- ✅ FAQs pour le chatbot
+---
 
-### Étape 7 — Lien de stockage
+## 6. Créer le lien de stockage
 
 ```bash
 php artisan storage:link
 ```
 
-### Étape 8 — Installer les dépendances Python
+---
+
+## 7. Installer les dépendances Python
 
 ```bash
 cd chatbot-python
+
 pip install flask flask-cors
+
 cd ..
 ```
 
 ---
 
-## 🚀 Lancement du projet
+# 🚀 Lancement
 
-### Terminal 1 — Serveur Laravel
+## Terminal 1
 
 ```bash
-cd agence-voyage
 php artisan serve
 ```
 
-➡️ Application : **http://127.0.0.1:8000**
+Application disponible sur :
 
-### Terminal 2 — Chatbot IA Python
+```
+http://127.0.0.1:8000
+```
+
+---
+
+## Terminal 2
 
 ```bash
-cd agence-voyage/chatbot-python
+cd chatbot-python
+
 python chatbot.py
 ```
 
-➡️ Chatbot API : **http://localhost:5000**
-➡️ Test santé : **http://localhost:5000/health**
+API Chatbot disponible sur :
 
----
-
-## 🔑 Comptes de démonstration
-
-### Compte Administrateur
 ```
-URL      : http://127.0.0.1:8000/login
-Email    : admin@gmail.com
-Password : admin123
-Accès    : /admin/dashboard
-```
-
-### Compte Client
-```
-URL      : http://127.0.0.1:8000/register
-→ Créez votre propre compte
-→ Rôle "client" attribué automatiquement
+http://localhost:5000
 ```
 
 ---
 
-## 📁 Structure du projet
+# 📁 Structure du projet
 
-```
+```text
 agence-voyage/
 │
-├── 📁 app/
-│   ├── 📁 Http/
-│   │   ├── 📁 Controllers/
-│   │   │   ├── 📁 Admin/
-│   │   │   │   ├── DashboardController.php
-│   │   │   │   ├── OffreAdminController.php
-│   │   │   │   ├── ReservationAdminController.php
-│   │   │   │   ├── UtilisateurController.php
-│   │   │   │   ├── PaiementAdminController.php
-│   │   │   │   ├── FaqController.php
-│   │   │   │   ├── NotificationAdminController.php
-│   │   │   │   └── MediaController.php
-│   │   │   ├── 📁 Auth/
-│   │   │   │   ├── AuthenticatedSessionController.php
-│   │   │   │   └── RegisteredUserController.php
-│   │   │   ├── HomeController.php
-│   │   │   ├── OffreController.php
-│   │   │   ├── ReservationController.php
-│   │   │   ├── PaiementController.php
-│   │   │   ├── ProfilController.php
-│   │   │   └── ChatbotController.php
-│   │   └── 📁 Middleware/
-│   │       ├── AdminMiddleware.php
-│   │       ├── ClientMiddleware.php
-│   │       └── CheckUserActif.php
-│   └── 📁 Models/
-│       ├── User.php
-│       ├── Offre.php
-│       ├── Reservation.php
-│       ├── Paiement.php
-│       ├── Media.php
-│       ├── ImageOffre.php
-│       ├── ChatbotFaq.php
-│       └── NotificationVoyage.php
-│
-├── 📁 chatbot-python/
-│   ├── chatbot.py          ← Chatbot IA (Flask + TF-IDF)
-│   └── requirements.txt
-│
-├── 📁 database/
-│   ├── 📁 migrations/
-│   │   ├── create_users_table.php
-│   │   ├── create_offres_table.php
-│   │   ├── create_images_offres_table.php
-│   │   ├── create_reservations_table.php
-│   │   ├── create_paiements_table.php
-│   │   ├── create_chatbot_faqs_table.php
-│   │   ├── create_notifications_voyages_table.php
-│   │   └── create_medias_table.php
-│   └── 📁 seeders/
-│       ├── DatabaseSeeder.php
-│       ├── AdminSeeder.php
-│       ├── OffresSeeder.php
-│       └── ChatbotFaqSeeder.php
-│
-├── 📁 resources/views/
-│   ├── 📁 layouts/
-│   │   ├── app.blade.php       ← Layout client
-│   │   └── admin.blade.php     ← Layout admin
-│   ├── 📁 auth/
-│   │   ├── login.blade.php
-│   │   └── register.blade.php
-│   ├── 📁 admin/
-│   │   ├── dashboard.blade.php
-│   │   ├── 📁 offres/
-│   │   ├── 📁 reservations/
-│   │   ├── 📁 utilisateurs/
-│   │   ├── 📁 paiements/
-│   │   ├── 📁 faqs/
-│   │   ├── 📁 notifications/
-│   │   └── 📁 medias/
-│   ├── 📁 client/
-│   │   ├── home.blade.php
-│   │   ├── 📁 offres/
-│   │   ├── 📁 reservations/
-│   │   ├── 📁 paiements/
-│   │   └── 📁 profil/
-│   └── welcome.blade.php
-│
-├── 📁 routes/
-│   ├── web.php                 ← Toutes les routes
-│   └── auth.php
-│
-├── .env.example                ← Template configuration
-├── .gitignore
-├── README.md
-└── composer.json
+├── app/
+├── bootstrap/
+├── config/
+├── database/
+├── public/
+├── resources/
+├── routes/
+├── storage/
+├── chatbot-python/
+├── .env.example
+├── composer.json
+└── README.md
 ```
 
 ---
 
-## 🗄️ Schéma de la base de données
+# 🤖 Chatbot IA
 
-```
-users ──────────┬──< reservations >──── offres
-                │          │
-                │          └──< paiements
-                │
-                └──< notifications_voyages
+Le chatbot est développé avec **Python** et **Flask**.
 
-offres ──────────< images_offres
-medias (slides & videos) — indépendant
-chatbot_faqs — indépendant
-```
+Il utilise l'algorithme **TF-IDF + Cosine Similarity** afin d'analyser les questions des utilisateurs et fournir des réponses pertinentes concernant :
 
-### Tables
-
-| Table | Colonnes principales |
-|---|---|
-| `users` | name, email, password, role, actif, photo |
-| `offres` | titre, destination, pays, prix, statut, featured |
-| `images_offres` | offre_id, image, ordre |
-| `reservations` | user_id, offre_id, reference, statut, prix_total |
-| `paiements` | reservation_id, transaction_id, montant, statut |
-| `medias` | titre, fichier, type (slide/video), actif |
-| `chatbot_faqs` | question, reponse, mots_cles, actif |
-| `notifications_voyages` | user_id, titre, message, lue |
-
----
-
-## 🤖 Chatbot IA — Fonctionnement
+- Réservations
+- Destinations
+- Paiements
+- Visa
+- Assurance
+- Annulation
+- Support client
 
 ### Architecture
 
 ```
-Utilisateur tape une question
-         ↓
-Laravel reçoit via POST /chatbot/message
-         ↓
-Laravel appelle Python Flask POST /chat
-         ↓
-Python analyse avec TF-IDF + Cosine Similarity
-         ↓
-Python cherche dans 19 catégories de connaissances
-         ↓
-Réponse renvoyée à Laravel → affichée dans le chat
-```
+Utilisateur
 
-### Catégories de réponses
-```
-✅ Salutations et aide générale
-✅ Comment réserver un voyage
-✅ Annulation et remboursement
-✅ Paiement et tarifs
-✅ Destinations générales
-✅ Paris — France
-✅ Maldives
-✅ Istanbul — Turquie
-✅ Rome — Italie
-✅ Dubai — Émirats
-✅ Safari Kenya
-✅ Bali — Indonésie
-✅ Contact et support
-✅ Visa et documents
-✅ Assurance voyage
-✅ Tarifs famille et enfants
-✅ Hébergement et hôtels
-✅ Remerciements
-✅ Au revoir
-```
+↓
 
-### Tester le chatbot directement
+Laravel
 
-```bash
-# Vérifier que le chatbot tourne
-curl http://localhost:5000/health
+↓
 
-# Envoyer une question
-curl -X POST http://localhost:5000/chat \
-  -H "Content-Type: application/json" \
-  -d "{\"message\": \"Comment reserver un voyage ?\"}"
+API Flask
+
+↓
+
+TF-IDF + Cosine Similarity
+
+↓
+
+Réponse du chatbot
 ```
 
 ---
 
-## 🔒 Sécurité
+# 🔒 Sécurité
 
-- 🔐 Authentification via middleware Laravel
-- 🛡️ Rôles : `admin` et `client` séparés
-- 🚫 Compte bloqué → déconnexion automatique
-- 🔒 CSRF sur tous les formulaires
-- 🔑 Mots de passe hashés avec bcrypt
-- 📁 Fichier `.env` jamais uploadé sur GitHub
-
----
-
-## 🎨 Design
-
-- **Police Admin** : Inter (Google Fonts)
-- **Police Client** : DM Sans + Playfair Display
-- **Couleur Admin** : Vert (#22C55E)
-- **Couleur Client** : Bleu ciel (#0EA5E9)
-- **Style** : Cards modernes, badges pill, animations hover
+- Authentification Laravel Breeze
+- Middleware de protection
+- Gestion des rôles (Admin / Client)
+- Protection CSRF
+- Validation des formulaires
+- Hashage des mots de passe avec Bcrypt
+- Fichier `.env` exclu du dépôt GitHub
 
 ---
 
+# 🎨 Interface
 
+- Bootstrap 5
+- Responsive Design
+- Dashboard moderne
+- Interface administrateur
+- Interface client intuitive
 
-## 👨‍💻 Auteur
+---
+
+# 👨‍💻 Auteur
 
 **Sami Awled Massoud**
 
 - GitHub : https://github.com/semiawledmassoud
+- Portfolio : https://sami-awled-massoud.netlify.app
+- LinkedIn : https://www.linkedin.com/in/sami-awled-massoud-b9560a276
 - Email : samibnmassoud@gmail.com
 
 ---
 
-## 📄 Licence
+# 📄 Licence
 
-Ce projet est sous licence **MIT** — voir le fichier [LICENSE](LICENSE) pour les détails.
+Ce projet est publié à des fins de démonstration de compétences en développement web full-stack.
 
 ---
 
-*Développé avec ❤️ pour le cours de développement web*
+*Développé avec ❤️ par Sami Awled Massoud.*
