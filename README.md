@@ -91,7 +91,7 @@
 ## 1. Cloner le projet
 
 ```bash
-git clone https://github.com/semiawledmassoud/traveldream.git
+git clone https://github.com/semiawledmassoud/agence-voyage.git
 
 cd agence-voyage
 ```
