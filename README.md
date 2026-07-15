@@ -6,31 +6,7 @@
 ![MySQL](https://img.shields.io/badge/MySQL-8.0-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)
 
-> Application web full-stack développée pour digitaliser la gestion d'une agence de voyage. Elle permet aux clients de consulter les offres, réserver et payer leurs voyages en ligne, tandis que les administrateurs disposent d'un tableau de bord complet pour gérer les offres, les réservations, les paiements et les clients.
-
----
-
-# 📸 Aperçu
-
-## 🌍 Espace Client
-
-- Consultation des offres de voyage
-- Recherche et filtrage
-- Réservation en ligne
-- Paiement sécurisé
-- Historique des réservations
-- Gestion du profil
-- Chatbot IA
-
-## 🛠️ Espace Administration
-
-- Dashboard avec statistiques
-- Gestion des offres
-- Gestion des réservations
-- Gestion des clients
-- Gestion des paiements
-- Gestion des médias
-- Gestion des FAQ du chatbot
+> **TravelDream** est une application web full-stack développée pour digitaliser la gestion d'une agence de voyage. Elle permet aux clients de consulter les offres, réserver et payer leurs voyages en ligne, tandis que les administrateurs disposent d'un tableau de bord complet pour gérer les offres, les réservations, les paiements et les utilisateurs.
 
 ---
 
@@ -41,12 +17,12 @@
 | Fonctionnalité | Description |
 |---|---|
 | Authentification | Inscription et connexion sécurisées |
-| Offres | Consultation et filtrage des voyages |
-| Réservation | Réservation avec calcul automatique du prix |
+| Offres de voyage | Consultation et filtrage des destinations |
+| Réservation | Réservation en ligne avec calcul automatique du prix |
 | Paiement | Paiement sécurisé |
 | Historique | Suivi des réservations |
-| Profil | Modification des informations personnelles |
-| Chatbot IA | Assistance disponible 24h/24 |
+| Profil | Modification des informations personnelles et photo |
+| Chatbot IA | Assistant virtuel disponible 24h/24 |
 
 ---
 
@@ -55,12 +31,12 @@
 | Fonctionnalité | Description |
 |---|---|
 | Dashboard | Statistiques en temps réel |
-| Offres | Ajouter, modifier et supprimer des offres |
+| Gestion des offres | Ajouter, modifier et supprimer des offres |
 | Réservations | Confirmer ou annuler les réservations |
-| Clients | Gérer les comptes clients |
-| Paiements | Suivi des paiements |
+| Clients | Gestion complète des comptes clients |
+| Paiements | Suivi des transactions |
 | Médias | Gestion des slides et vidéos |
-| FAQ | Gestion de la base de connaissances du chatbot |
+| FAQ | Gestion des réponses du chatbot |
 
 ---
 
@@ -115,14 +91,14 @@
 ## 1. Cloner le projet
 
 ```bash
-git clone https://github.com/semiawledmassoud/agence-voyage.git
+git clone https://github.com/semiawledmassoud/traveldream.git
 
 cd agence-voyage
 ```
 
 ---
 
-## 2. Installer les dépendances Laravel
+## 2. Installer les dépendances PHP
 
 ```bash
 composer install
@@ -138,7 +114,7 @@ cp .env.example .env
 php artisan key:generate
 ```
 
-Configurer ensuite la base de données dans le fichier `.env`.
+Configurer ensuite la base de données :
 
 ```env
 DB_CONNECTION=mysql
@@ -189,7 +165,7 @@ cd ..
 
 ---
 
-# 🚀 Lancement
+# 🚀 Exécution
 
 ## Terminal 1
 
@@ -213,7 +189,7 @@ cd chatbot-python
 python chatbot.py
 ```
 
-API Chatbot disponible sur :
+Chatbot disponible sur :
 
 ```
 http://localhost:5000
@@ -246,49 +222,45 @@ agence-voyage/
 
 Le chatbot est développé avec **Python** et **Flask**.
 
-Il utilise l'algorithme **TF-IDF + Cosine Similarity** afin d'analyser les questions des utilisateurs et fournir des réponses pertinentes concernant :
+Il utilise l'algorithme **TF-IDF + Cosine Similarity** afin de comprendre les questions des utilisateurs et fournir des réponses pertinentes concernant :
 
 - Réservations
 - Destinations
 - Paiements
 - Visa
-- Assurance
+- Assurance voyage
 - Annulation
 - Support client
 
 ### Architecture
 
-```
+```text
 Utilisateur
-
-↓
-
+      │
+      ▼
 Laravel
-
-↓
-
+      │
+      ▼
 API Flask
-
-↓
-
+      │
+      ▼
 TF-IDF + Cosine Similarity
-
-↓
-
-Réponse du chatbot
+      │
+      ▼
+Réponse du Chatbot
 ```
 
 ---
 
 # 🔒 Sécurité
 
-- Authentification Laravel Breeze
-- Middleware de protection
+- Authentification avec Laravel Breeze
 - Gestion des rôles (Admin / Client)
 - Protection CSRF
 - Validation des formulaires
+- Middleware de sécurité
 - Hashage des mots de passe avec Bcrypt
-- Fichier `.env` exclu du dépôt GitHub
+- Variables d'environnement protégées
 
 ---
 
@@ -297,8 +269,8 @@ Réponse du chatbot
 - Bootstrap 5
 - Responsive Design
 - Dashboard moderne
-- Interface administrateur
-- Interface client intuitive
+- Interface d'administration intuitive
+- Interface client ergonomique
 
 ---
 
@@ -319,4 +291,4 @@ Ce projet est publié à des fins de démonstration de compétences en développ
 
 ---
 
-*Développé avec ❤️ par Sami Awled Massoud.*
+**Développé par Sami Awled Massoud.**
